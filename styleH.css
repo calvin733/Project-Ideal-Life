@@ -98,6 +98,7 @@ nav ul a:active{
 
 .btn-signup:hover {
   background-color: #999999;
+  color: white;
 }
 
 .btn-signup:active {
