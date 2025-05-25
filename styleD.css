@@ -8,19 +8,12 @@
     src: url(Assets/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Segoe UI', sans-serif;
-    color: #333;
-    background-color: #fdfdfd;
+    background-color: #f4f7f6;
+    padding: 0;
+    margin: 0;
 }
-
-/* HEADER */
 
 header {
     display: flex;
@@ -32,6 +25,7 @@ header {
     /* drop shadow yang memudar */
     position: relative;
     z-index: 10;
+    margin-bottom: 20px;
 }
 
 .logo h1 {
@@ -114,15 +108,6 @@ nav ul a:active {
 
 .btn-signup:active {
     background-color: #999999;
-}
-
-/* CONTENT */
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
-    padding: 40px 20px;
-    margin: 0;
 }
 
 .container {
@@ -210,6 +195,7 @@ body {
     padding: 20px;
     font-family: Jacques Francois;
     color: black;
+    margin-top: 20px;
 }
 
 .footer-container {
