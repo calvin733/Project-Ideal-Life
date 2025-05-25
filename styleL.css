@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Jacques Francois;
+    src: url(Fonts/Jacques_Francois/JacquesFrancois-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -120,8 +125,8 @@ nav ul a:hover {
 
 .login-container {
   flex: 1;
-  max-width: 500px;
-  padding: 40px;
+  max-width: 700px;
+  padding: 20px;
   border: 2px solid #37897B;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 153, 255, 0.2);
@@ -185,11 +190,10 @@ input[type="checkbox"] {
   font-size: 1rem;
 }
 
-/* ======= FOOTER ======= */
 .site-footer {
   background-color: white;
   padding: 20px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: Jacques Francois;
   color: black;
 }
 
