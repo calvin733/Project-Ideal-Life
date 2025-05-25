@@ -1,0 +1,194 @@
+label{
+    font-weight: bold;
+}
+
+.bmi-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5%;
+  gap: 2.5%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.bmi-left, .bmi-right {
+  flex: 1 1 45%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 3px solid #4cbcad;
+  border-radius: 10px;
+}
+
+.bmi-left {
+  box-shadow: none;
+  border: none;
+
+}
+
+.page-title{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;   
+}
+
+#title{
+    font-size: 36pt;
+}
+
+.bmi-left h2 {
+  color: #37897b;
+  letter-spacing: 1px;
+}
+
+
+.bmi-left p {
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.gender-buttons {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gender-btn {
+  background-color: #dff6f3;
+  border: none;
+  border-radius:20px;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1;
+  padding: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gender-btn:hover {
+  background-color: #4cbcad; 
+  color: white;              
+  box-shadow: 0 4 8px rgba(0, 0, 0, 0.2);
+}
+
+.gender-toggle {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.gender-btn {
+  flex: 1;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gender-btn.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 3px solid #60dcc9;
+  box-shadow: inset 0 4 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.calculate-btn {
+  max-width: 200px;   
+  width: 100%;                
+  margin: 20px auto;        
+  display: block;            
+  background-color: #60dcc9;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.calculate-btn:hover {
+  background-color: #5c8b84;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.bmi-right h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.bmi-scale-image img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bmi-right label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bmi-right input[readonly] {
+  background-color: #f8f8f8;
+}
+
+.bmi-scale {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.bmi-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+  flex: 1;
+}
+
+.bmi-bar {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  height: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.underweight { background-color: #87CEFA; }
+.normal      { background-color: #90EE90; }
+.overweight  { background-color: #FFD700; }
+.obese       { background-color: #FFA07A; }
+.extreme     { background-color: #FF6347; }
+
+.bmi-bar.highlight {
+  transform: scaleY(1.15);
+  z-index: 1;
+  font-size: 14px;
+}
+
