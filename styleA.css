@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* drop shadow yang memudar */
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.logo h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #37897B;
+  font-size: 30px;
+}
+
+.logo span {
+  font-weight: 1000PX;
+}
+
+.logo .tagline {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #888;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul a {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  color: #37897B;
+  font-weight: bold;
+}
+
+.btn-login,
+.btn-signup {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-login {
+  font-family: 'Nunito', sans-serif;
+  background-color: white;
+  color: #37897B;
+  border: 1px solid #37897B;
+}
+
+.btn-signup {
+  font-family: 'Nunito', sans-serif;
+  background-color: #37897B;
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #37897B;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.intro-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.intro p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.intro-images {
+  flex-shrink: 0;
+  max-width: 500px;
+  width: 100%;
+}
+
+.intro-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission Section */
+.mission-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 0;
+}
+
+.mission-section .gallery {
+  position: relative;
+  flex: 0 0 600px;
+  height: 450px;
+}
+
+.main-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 360px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  height: 260px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+  border: 12px solid white;
+  z-index: 2;
+}
+
+.food-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.mission-content h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+
+.mission-list {
+  list-style: none;
+}
+
+.mission-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+.mission-list li::before {
+  content: '✓';
+  color: #37897B;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-right: 15px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Vision Section */
+.mission-vision {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 400px;
+}
+
+.vision-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.vision h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.vision-list {
+  list-style: none;
+  padding: 0;
+}
+
+.vision-list li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.vision-list li::before {
+  content: "✓";
+  color: #37897B;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.vision-images {
+  flex-shrink: 0;
+  max-width: 500px;
+  width: 100%;
+  
+}
+
+.vision-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.vision-images img:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Design for Header and General */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-images {
+    max-width: 100%;
+  }
+
+  .intro-images img {
+    height: 250px;
+  }
+}
+
+/* Responsive Design for Mission Section */
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column-reverse;
+    gap: 50px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .mission-section .gallery {
+    flex: none;
+    width: 100%;
+    height: 380px;
+  }
+
+  .main-image {
+    width: 380px;
+    height: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .food-image {
+    width: 250px;
+    height: 180px;
+    right: 10px;
+    bottom: -30px;
+    border: 8px solid white;
+  }
+
+  .mission-content {
+    padding-left: 0;
+  }
+
+  .mission-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .mission-list li {
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive Design for Vision Section */
+@media (max-width: 768px) {
+  .mission-vision {
+    padding: 60px 15px;
+  }
+
+  .vision {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .vision h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .vision-list li {
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .vision-images {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .vision-images img {
+    height: 250px;
+  }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .btn-login, .btn-signup {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-images img {
+    height: 200px;
+  }
+
+  /* Mission Mobile */
+  .mission-section {
+    padding: 30px 15px;
+  }
+
+  .main-image {
+    width: 280px;
+    height: 200px;
+  }
+
+  .food-image {
+    width: 180px;
+    height: 130px;
+    right: 20px;
+    bottom: -10px;
+  }
+
+  .mission-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission-list li {
+    font-size: 1rem;
+  }
+
+  /* Vision Mobile */
+  .mission-vision {
+    padding: 40px 10px;
+  }
+
+  .vision h2 {
+    font-size: 1.8rem;
+  }
+
+  .vision-list li {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .vision-images img {
+    height: 200px;
+  }
+}
