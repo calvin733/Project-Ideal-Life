@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Ideal Life</title>
     <link rel="stylesheet" href="styleD.css">
 </head>
+
 <body>
-    
+
+    <!-- CONTENT -->
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('exercise')">Exercise</button>
+            <button class="tab" onclick="showTab('dietary')">Dietary</button>
+        </div>
+
+        <!-- Exercise Section -->
+        <div class="content" id="exercise" style="display: block;">
+            <div class="item">
+                <img src="Assets/exercise1.png" alt="Aerobic Exercise" />
+                <div class="text">
+                    <h3>1. Aerobic Exercise</h3>
+                    <p>• Activities like brisk walking, running, stationary biking, and swimming are effective for
+                        burning calories.<br>
+                        • At least 30 minutes of moderate-intensity aerobic exercise daily is recommended for weight
+                        loss; more time leads to better results (Donnelly et al., 2004).</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text">
+                    <h3>2. High-Intensity Interval Training (HIIT)</h3>
+                    <p>• HIIT is superior as it burns more calories in less time, with a calorie-burning effect that can
+                        continue up to 24 hours post-exercise (Haines & Mansi, 2023).<br>
+                        • Involves alternating between intense activity (e.g., sprints) and short rest periods.</p>
+                </div>
+                <img src="Assets/exercise2.png" alt="HIIT" />
+
+            </div>
+
+            <div class="item">
+                <img src="Assets/exercise3.png" alt="Strength Training" />
+                <div class="text">
+                    <h3>3. Strength Training</h3>
+                    <p>• Important for preserving muscle mass during weight loss, which helps increase basal
+                        metabolism.<br>
+                        • Donnelly et al. (2004) suggest that strength training supports long-term metabolic health.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text">
+                    <h3>4. Behavioral Strategies</h3>
+                    <p>• Goal setting, activity tracking, and social support enhance adherence to long-term exercise
+                        routines.</p>
+                </div>
+                <img src="Assets/exercise4.png" alt="Behavioral Strategies" />
+            </div>
+        </div>
+
+        <!-- Dietary Section -->
+        <div class="content" id="dietary" style="display: none;">
+            <div class="intro">
+                <h3>Dietary Patterns</h3>
+                <p>Sustainable healthy diets should ensure adequate macro/micronutrients, energy balance, and support
+                    metabolic health. The following diets are evidence-based:</p>
+            </div>
+
+            <div class="item">
+                <img src="Assets/dietary1.png" alt="Mediterranean Diet" />
+                <div class="text">
+                    <h3>1. Mediterranean Diet</h3>
+                    <p>• Focuses on fruits, vegetables, whole grains, nuts, olive oil, fish, and moderate
+                        dairy/meat.<br>
+                        • Clinical Trial (PREDIMED-Plus): Energy-reduced version + physical activity led to significant
+                        weight loss (~3.9 kg; p &lt; 0.01) and improved cardiometabolic risk via gut microbiota
+                        modulation.<br>
+                        • Meta-analysis: Average BMI reduction of ~0.71 kg/m², waist reduction ~1.69 cm, plus improved
+                        blood pressure and glycemic control.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="text left">
+                    <h3>2. DASH Diet</h3>
+                    <p>• Dietary Approaches to Stop Hypertension. Originally to reduce blood pressure, also aids in
+                        weight loss.<br>
+                        • 16-week RCT (post-bariatric patients): Calorie-limited DASH led to better BMI, fat and mass
+                        reduction.<br>
+                        • 8-week Triple-blind RCT (children with overweight/obesity): Reduced body weight, waist
+                        circumference, BMI, WWI, and BRI — even without specific calorie restriction.</p>
+                </div>
+                <img src="Assets/dietary2.png" alt="DASH Diet" />
+            </div>
+
+            <div class="item">
+                <img src="Assets/dietary3.png" alt="Intermittent Fasting" />
+                <div class="text">
+                    <h3>3. Intermittent Fasting (IF)</h3>
+                    <p>• Includes Alternate-Day Fasting (ADF), Time-Restricted Eating (TRE), and 5:2 Diet.<br>
+                        • 6-month RCT (3 arms, adults &gt; 30 years): Average weight loss –2.05 kg, BMI –0.73 kg/m²;
+                        significant lean mass loss.<br>
+                        • Umbrella Review: TRE linked to fat/weight loss and better glucose control.<br>
+                        • 5:2 Diet shown to reduce LDL cholesterol.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.content').forEach(content => content.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
+
 </html>
