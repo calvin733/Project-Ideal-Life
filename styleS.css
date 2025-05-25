@@ -1,0 +1,257 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #37897B;
+  font-size: 30pxa
+}
+
+.logo span {
+  font-weight: 1000;
+}
+
+.logo .tagline {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #888;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul a {
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  color: #37897B;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-login {
+  font-family: 'Nunito', sans-serif;
+  background-color: white;
+  color: #37897B;
+  border: 1px solid #37897B;
+}
+
+.btn-signup {
+  font-family: 'Nunito', sans-serif;
+  background-color: #37897B;
+  color: white;
+}
+
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img-signup {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.signup-container {
+  flex: 1;
+  max-width: 500px;
+  padding: 40px;
+  border: 2px solid #37897B;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 153, 255, 0.2);
+  background-color: white;
+  text-align: left;
+}
+
+.headings {
+  color: #37897B;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.headings-2 {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.details {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #999;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.signup-btn {
+  background-color: #37897B;
+  width: 100%;
+  color: white;
+  padding: 12px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.site-footer {
+  background-color: white;
+  padding: 20px;
+  font-family: 'Helvetica', sans-serif;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo-section,
+.footer-links,
+.footer-products,
+.footer-social {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-logo-section {
+  max-width: 30%;
+}
+
+.footer-heading {
+  color: #37897B;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footer-logo-img {
+  width: 100%;
+}
+
+.footer-links a,
+.footer-products a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.logo-social {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #37897B;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .img-signup {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .signup-btn {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

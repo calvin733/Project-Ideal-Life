@@ -3,11 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Sign Up</title>
     <link rel="stylesheet" href="styleS.css">
+    <script src="SignUp.js" defer></script>
 </head>
 <body>
-    
+    <header>
+    <div class="logo">
+      <h1><span>IDEAL</span>LIFE</h1>
+      <p class="tagline">Nourish Your Body, Empower Your Life</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="indexHome.html">Home</a></li>
+        <li><a href="indexTrackrecord.html">My Records</a></li>
+        <li><a href="indexAboutUs.html">About Us</a></li>
+        <li><a href="indexLogIn.html" class="btn-login">Login</a></li>
+        <li><a href="indexSignUp.html" class="btn-signup">SignUp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="main-container">
+        <div class="img-container">
+                <img src="assets/signup-img.jpg" class="img-signup">
+        </div>
+
+        <div class="signup-container">
+            <h2 class="headings">Sign Up</h2>
+            <p class="headings-2">Your wellness journey starts here, join us and take the first step!</p>
+            <form id="SignUp-Form">
+                <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" id="fullName" placeholder="Enter Your Full Name" />
+                        <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" id="email" placeholder="Enter Your Email Address" />
+                        <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" id="password" placeholder="Enter Your Password" />
+                        <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="input-box">
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="agreement" />
+                    <label for="agreement">I agree to terms and conditions</label>
+                    </div>
+                    <span class="error-message" id="termsError"></span>
+                </div>
+
+                <input type="submit" value="Sign Up" class="signup-btn"/>
+            </form>
+        </div>
+    </div>
+
+   <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo-section">
+                <img src="Assets/Logo.png" class="footer-logo-img">
+            </div>
+
+           
+            <div class="footer-links">
+                <a href="indexHome.html">Home</a>
+                <a href="indexAboutUs.html">About Us</a>
+                <a href="indexTrackrecord.html">My Records</a>
+                <a href="indexLogIn.html">Log In</a>
+                <a href="indexSignUp.html">Sign Up</a>
+            </div>
+
+            <div class="footer-products">
+                <h3 class="footer-heading">Products</h3>
+                <a href="indexBMI.html">BMI Calculator</a>
+                <a href="indexCalorie.html">Calorie Calculator</a>
+                <a href="indexDiet&Exercise.html">Exercise and Diet Tips</a>
+            </div>
+
+            <div class="footer-social">
+                <span class="footer-heading">FOLLOW US!</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com"><img src="assets/instagram.svg" class="logo-social"></a>
+                    <a href="https://x.com"><img src="assets/x.svg" class="logo-social"></a>
+                    <a href="https://www.facebook.com"><img src="assets/facebook.svg" class="logo-social"></a>
+                    <a href="https://www.youtube.com"><img src="assets/youtube.svg" class="logo-social"></a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="footer-bottom">
+            <p>© 2025 IDEAL LIFE. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
