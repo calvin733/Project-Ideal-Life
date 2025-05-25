@@ -8,6 +8,104 @@
     src: url(Assets/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* drop shadow yang memudar */
+    position: relative;
+    z-index: 10;
+}
+
+.logo h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #37897B;
+    font-size: 30px;
+}
+
+.logo span {
+    font-weight: 1000PX;
+}
+
+.logo .tagline {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: #888;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul a {
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: #37897B;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    color: #999999;
+}
+
+nav ul a:active {
+    color: #999999;
+}
+
+
+.btn-login,
+.btn-signup {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.btn-login {
+    font-family: 'nunito', sans-serif;
+    background-color: white;
+    color: #37897B;
+    border: 1px solid #37897B;
+}
+
+.btn-login:hover {
+    background-color: #999999;
+    color: white;
+}
+
+.btn-login:active {
+    background-color: #999999;
+    color: white;
+    border-color: #999999;
+}
+
+.btn-signup {
+    font-family: 'nunito', sans-serif;
+    background-color: #37897B;
+    color: white;
+    border: none;
+}
+
+.btn-signup:hover {
+    background-color: #999999;
+}
+
+.btn-signup:active {
+    background-color: #999999;
+}
+
+/* CONTENT */
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f4f7f6;
@@ -91,4 +189,69 @@ body {
 
 .intro {
     margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: white;
+    padding: 20px;
+    font-family: Jacques Francois;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo-section,
+.footer-links,
+.footer-products,
+.footer-social {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-logo-section {
+    max-width: 30%;
+}
+
+.footer-heading {
+    color: #37897B;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer-logo-img {
+    width: 100%;
+}
+
+.footer-links a,
+.footer-products a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logo-social {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #37897B;
+    font-weight: 600;
 }
