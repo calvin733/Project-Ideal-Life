@@ -207,59 +207,71 @@ nav ul a:active{
     background: #60DCC9;
 }
 
-/* Results Panel */
+/* ===== Result Box Styling ===== */
 .results-panel {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #e1e5e9;
+  background: #FFFFFF;
+  border: 2px solid #60DCC9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
 }
 
+/* Judul */
 .results-panel h3 {
-    margin-bottom: 1.5rem;
-    color: #333;
-    font-size: 1.3rem;
+  font-size: 1.25rem;      /* 20px */
+  font-weight: 600;
+  color: #37897B;
+  margin-bottom: 1rem;
 }
 
+/* Setiap item */
 .result-item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e1e5e9;
+  margin-bottom: 1.5rem;
 }
 
-.result-item:last-child {
-    border-bottom: none;
+/* Label utama (seperti “BMR”, “TDEE”) */
+.result-item > label {
+  display: block;
+  font-size: 1rem;         /* 16px */
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
 }
 
-.result-item h4 {
-    color: #000000;
-    margin-bottom: 0.3rem;
-    font-size: 1.1rem;
-}
-
-.result-item h5 {
-    color: #999999;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
+/* Deskripsi kecil */
 .result-description {
-    color: #999999;
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+  font-size: 0.85rem;      /* ~14px */
+  color: #999999;
+  margin-bottom: 0.5rem;
 }
 
-.result-value {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #60DCC9;
+/* Input hasil */
+.result-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #60DCC9;
+  background: #FFFFFF;
+  border: 1px solid #E1E5E9;
+  border-radius: 8px;
+  text-align: right;
 }
 
+/* Item Recommended khusus */
 .result-item.recommended {
-    background: #e8f8f7;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #60DCC9;
+  background: #FFFFFF;
+  border: 2px solid #60DCC9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0;       /* jelaskan: ini item terakhir */
+}
+
+/* Hilangkan margin-bottom pada item terakhir */
+.result-item.recommended + .result-item,
+.result-item:last-child {
+  margin-bottom: 0;
 }
 
 /* Footer */

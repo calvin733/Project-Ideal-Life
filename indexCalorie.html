@@ -96,31 +96,28 @@
                     </form>
                 </div>
 
-                <!-- Right Side - Results -->
-                <div class="results-panel">
-                    <h3>Your results</h3>
-                    
-                    <div class="result-item">
-                        <h4>BMR</h4>
-                        <p class="result-description">Your body's energy needs at rest</p>
-                        <div class="result-value" id="bmr-result">-</div>
-                    </div>
+<!-- Right Side – Results -->
+<div class="results-panel">
+  <h3>Your results</h3>
 
-                    <div class="result-item">
-                        <h4>TDEE</h4>
-                        <p class="result-description">Total energy needed based on your activity level</p>
-                        <div class="result-value" id="tdee-result">-</div>
-                    </div>
+  <div class="result-item">
+    <label for="bmr-result">BMR</label>
+    <p class="result-description">Your body’s energy needs at rest</p>
+    <input type="text" id="bmr-result" class="result-input" readonly placeholder="- cal/day">
+  </div>
 
-                    <div class="result-item recommended">
-                        <h4>Recommended</h4>
-                        <h5>Calorie Intake</h5>
-                        <div class="result-value" id="recommended-result">-</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+  <div class="result-item">
+    <label for="tdee-result">TDEE</label>
+    <p class="result-description">Total energy needed based on your activity level</p>
+    <input type="text" id="tdee-result" class="result-input" readonly placeholder="- cal/day">
+  </div>
+
+  <div class="result-item recommended">
+    <label for="recommended-result">Recommended<br>Calorie Intake</label>
+    <input type="text" id="recommended-result" class="result-input" readonly placeholder="- cal/day">
+  </div>
+</div>
+
 
     <!-- Footer -->
    <footer class="site-footer">
