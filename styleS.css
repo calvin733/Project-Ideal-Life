@@ -3,27 +3,26 @@
     src: url(Fonts/Jacques_Francois/JacquesFrancois-Regular.ttf);
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   padding: 1rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
   position: relative;
   z-index: 10;
-  flex-wrap: wrap;
 }
+
 
 .logo h1 {
   font-family: 'Raleway', sans-serif;
   color: #37897B;
-  font-size: 30pxa
+  font-size: 30px;
 }
 
 .logo span {
-  font-weight: 1000;
+  font-weight: 1000PX;
 }
 
 .logo .tagline {
@@ -37,7 +36,6 @@ nav ul {
   display: flex;
   gap: 20px;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 nav ul a {
@@ -47,25 +45,56 @@ nav ul a {
   font-weight: bold;
 }
 
-.btn {
-  border: none;
+nav ul a:hover{
+  color: #999999;
+}
+
+nav ul a:active{
+  color: #999999;
+}
+
+
+.btn-login, .btn-signup {
   padding: 6px 14px;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.2s ease;
 }
 
 .btn-login {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'nunito', sans-serif;
   background-color: white;
   color: #37897B;
   border: 1px solid #37897B;
 }
 
+.btn-login:hover {
+  background-color: #999999;
+  color: white;
+}
+
+.btn-login:active {
+  background-color: #999999;
+  color: white;
+  border-color: #999999;
+}
+
 .btn-signup {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'nunito', sans-serif;
   background-color: #37897B;
   color: white;
+  border: none;
+}
+
+.btn-signup:hover {
+  background-color: #999999;
+  color: white;
+}
+
+.btn-signup:active {
+  background-color: #999999;
 }
 
 
