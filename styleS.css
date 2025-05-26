@@ -3,13 +3,19 @@
     src: url(Fonts/Jacques_Francois/JacquesFrancois-Regular.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   padding: 1rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 10px rgba(63, 48, 48, 0.3); 
   position: relative;
   z-index: 10;
 }
